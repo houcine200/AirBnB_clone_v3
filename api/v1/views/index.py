@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Module containing API routes, including the /status route."""
 from api.v1.views import app_views
 from flask import jsonify

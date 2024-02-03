@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Module defining the Flask application and API configuration."""
 from flask import Flask
 from models import storage
