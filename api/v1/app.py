@@ -17,8 +17,8 @@ def close_storage_connection(exception):
 
 @app.errorhandler(404)
 def not_found_error(err):
-    response_error = {"error": "Not Found"}
     """returns a JSON-formatted 404 status code response."""
+    response_error = {"error": "Not found"}
     return make_response(jsonify(response_error), 404)
 
 
