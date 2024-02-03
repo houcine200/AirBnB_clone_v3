@@ -70,7 +70,7 @@ class FileStorage:
         self.reload()
 
     def get(self, cls, id):
-        """Returning object based on class name and ID, or None if not found."""
+        """Return object based on class name and ID, or None if not found."""
         from models import storage
         all_cls = storage.all(cls)
         key = "{}.{}".format(cls.__name__, id)
